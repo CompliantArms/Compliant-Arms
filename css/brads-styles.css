@@ -247,7 +247,7 @@ img {
 .one-quarter {width: 25%;}
 .one-third {width: 33.33%;}
 .one-half {width: 50%;}
-.two-thirds {width: 66.66%;}
+.two-thirds {width: 64.55%;}
 
 @media (max-width: 600px) {
   .collapse-at-small {
@@ -403,7 +403,7 @@ img {
 @media (max-width: 560px) {
   .footer-column-one,
   .footer-column-two {
-    width: auto;
+    /*width: auto;*/
     float: none;
   }
 
@@ -434,6 +434,19 @@ img {
 
 .answer {
   display: none;
+  overflow: hidden;
+}
+
+.answer-column1 {
+  width: 40%;
+  float: left;
+  margin-right: 3%;
+}
+
+.answer-column2 {
+  width: 54%;
+  float: left;
+  margin-right: 3%;
 }
 
 .question {
@@ -443,11 +456,10 @@ img {
   cursor: pointer;
   font-weight: normal;
   font-size: 1.2rem;
-  border-top: 1px dotted #BBB;
 }
 
 .question:hover {
-  color: #777;
+  color: red;
   text-decoration: underline;
 }
 
@@ -461,7 +473,7 @@ img {
   margin-right: -20px;
 }
 
-.photo-gallery-items a {
+.fa a {
   display: block;
   float: left;
   width: 20%;
@@ -519,4 +531,106 @@ img {
   font-weight: bold;
   position: relative;
   top: -7px;
+}
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+  background: url('../images/button-back.png');
+  background-color: #f04b4c;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+  background: url('../images/button-back.png');
+  background-color: #3d6098;
+  color: white !important;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 23%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background: url('../images/button-back.png');
+    background-color: #3d6098;
+    color: white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    /*width: auto;*/
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+
+
+.fcenter {
+  opacity: .1;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
 }

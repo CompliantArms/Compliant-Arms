@@ -12,7 +12,7 @@
 
     <div class="site-header">
       <div class="container">
-        <h1><a href="index.html">Brad&rsquo;s Website</a></h1>
+        <h1><a href="index.html">Compliant Arms</a></h1>
 
         <nav class="main-navigation">
           <ul>
@@ -36,40 +36,52 @@
       <div class="row collapse-at-small">
         <div class="one-third">
 
-          <img src="images/ca-guns.png">
+          <img id="imageReplace"/ src="images/ca-guns.png">
 
 
         </div>
         <div class="two-thirds">
-          <h2 class="question"><i class="fa fa-bullseye" aria-hidden="true"></i>What are my options to make my AR-15 CA Compliant?</h2>
-          <div class="answer">
-            <ul>
-            <li class="question">Convert your rifle to a "FIXED" magazine</li>
-            <div class="answer">
-              <p>Fixed magazine definition</p>
-              <img class="photo-gallery-items" src="images/maglock.jpg">
-            </div>
-            <li>Convert your rifle to "FEATURELESS"</li>
-            <li>Register your rifle as an "ASSAULT RIFLE"</li>
+          <ul class="tab">
+            <li class="buttback"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'compliant'), changeImage('images/cacomp.png');">
+              How to make my AR CA Compliant
+                </a>
+            </li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'magazine'), changeImage('images/magicon.png');">
+              Magazine Restrictions</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'definitions'), changeImage('images/aricon.png');">
+              Definitions</a></li>
           </ul>
+          <br>
+          <div id="compliant" class="tabcontent">
+              <button class="accordion" data-photo="images/maglock.png">Fixed Magazine</button>
+              <div class="panel">
+                <p>By converting your rifle to a "fixed" magazine, you do not fall into the definition of an assault rifle, therefore do not need register it as such. Also, you are able to keep all of your features such as a pistol grip, adjustable stock, etc. The simple definition of a fixed magazine is that you have to dissasemble your rifle before you are able to release the magazine. There are a few different options on the market, but the industry standard is the AR MagLock.</p>
+              </div>
+
+              <button class="accordion" data-photo="images/featureless.png">Featureless</button>
+              <div class="panel">
+                <p>By converting your rifle to "featureless", you can use a normal magazine release. Doing this though, by definition, you must give up a lot of "fun" features including the main pistol grip, forward pistol grip, adjustable stock, flash hider, and more.</p>
+              </div>
+
+              <button class="accordion" data-photo="images/registration.png">Register</button>
+              <div class="panel">
+                <p>Register your weapon as an assault rifle</p>
+              </div>
+
           </div>
 
-          <h2 class="question"><i class="fa fa-bullseye" aria-hidden="true"></i>Are my magazines legal?</h2>
-          <div class="answer">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia saepe, laboriosam dolores quaerat obcaecati! Cumque nobis hic accusamus explicabo ab enim, similique consectetur perspiciatis. Iusto alias veritatis expedita ad vel.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eveniet quas quo aliquam eum voluptatibus labore nemo sapiente distinctio illum omnis ipsum repellendus cumque id minus cupiditate! Praesentium debitis, repellat.</p>
+          <div id="magazine" class="tabcontent">
+            <p>New magazine restrictions limit any and all magazines to 10 rounds or less. Even if you previously owned large magazines legally, you now have to turn them in or get rid of them.</p>
+            <img src="images/magazines.png">
           </div>
 
-          <h2 class="question">What is 2 + 2?</h2>
-          <div class="answer">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia saepe, laboriosam dolores quaerat obcaecati! Cumque nobis hic accusamus explicabo ab enim, similique consectetur perspiciatis. Iusto alias veritatis expedita ad vel.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eveniet quas quo aliquam eum voluptatibus labore nemo sapiente distinctio illum omnis ipsum repellendus cumque id minus cupiditate! Praesentium debitis, repellat.</p>
-          </div>
-
-          <h2 class="question">Why is Earth round?</h2>
-          <div class="answer">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia saepe, laboriosam dolores quaerat obcaecati! Cumque nobis hic accusamus explicabo ab enim, similique consectetur perspiciatis. Iusto alias veritatis expedita ad vel.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eveniet quas quo aliquam eum voluptatibus labore nemo sapiente distinctio illum omnis ipsum repellendus cumque id minus cupiditate! Praesentium debitis, repellat.</p>
+          <div id="definitions" class="tabcontent">
+            <h2>SB-880 Definitions:</h2>
+            <p>Any person who, from January 1, 2001, to December 31, 2016, inclusive, lawfully possessed an
+assault weapon that does not have a fixed magazine, as defined in Penal Code section 30515,
+including those weapons with an ammunition feeding device that can be readily removed from
+the firearm with the use or a tool (commonly referred to as a bullet-button weapon) must register
+the firearm before January 1, 2018.
           </div>
         </div>
       </div>
