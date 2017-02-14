@@ -473,6 +473,7 @@ img {
   margin-right: -20px;
 }
 
+.photo-gallery-items a,
 .fa a {
   display: block;
   float: left;
